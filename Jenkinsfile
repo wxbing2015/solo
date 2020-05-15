@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'maven:3.6-alpine'
-      args '-u root -v /home/jenkins/mvnrepo:/root/.m2'
+      args '-u root -v /data/jenkins/mvnrepo:/root/.m2'
     }
 
   }
